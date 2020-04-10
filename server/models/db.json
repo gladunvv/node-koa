@@ -1,0 +1,33 @@
+{
+  "products": [
+
+  ],
+  "user": {
+    "login": "admin@gmail.com",
+    "password": "pass12",
+    "hash": "84dea78ffdd0b6a474056bdb1d563e72f96ec74b67d3c8a9a971ca9253642d1f9205320eb9eaceca3024d787542a04f1d56e8463c6e002025d4d1c79bc7ed4c419ec67e1d6bf9fea9cb0b237f939127a84ab3e420dc21472e66ed731bf91e78dd7e8dd8d55de6dc59e88cf30fc1b18b352b368dc18c77b4c59537b2685feff8b039e525a3b3c5475979d1e030ddc5af75aff3ae6b59e0b957b483915ad9309618c1938eb55fbe03da058172a4e39ace978f6da9c13bd2cc443c01c5b29499850ef94918eef1919e1f94d5791a347f9090b854540d6fd6cca748d2d62776062bf9e2e7e067f0db9bee5863c1dfc85be3dc61499e81502b2592d394ad47ecf682d7b2e1b28db8c2acc4d201e3e280d09c89cbad79d00500f906da54f72df1fad0690b0a909fd88ec3676d18f2ef33b326139a89606b7e48c05c3c26215aa54d5380fade88182e789705eee77a4db331fd59074103df66a78373facfa2284fdbee3d65e966759ec27eb5cabc098992db5bb5808d4388e9e9c19ab4aaf06959e95fa796a3df1159162fba47cc083eeeaafc390752ad1580132320e598a8c08f1529f8ffe72a886dea87f0deb781ecc4332b75639dec7bd21f8551bbed957502064967be906cbb73521f065ed2f9019a82c78067f6cea59f42d289fa7aa3ec77eaf2fd4f59d25de0ccd4529ac2689ad7ba29ac4e6b652c743e6393808e49132a3d57c",
+    "salt": "231109c5412a5af760488b451f9dc74a"
+  },
+  "skills": [
+    {
+      "id": "age",
+      "number": "12",
+      "text": "Возраст начала занятий на скрипке"
+    },
+    {
+      "id": "concerts",
+      "number": "55",
+      "text": "Концертов отыграл"
+    },
+    {
+      "id": "cities",
+      "number": "3",
+      "text": "Максимальное число городов в туре"
+    },
+    {
+      "id": "years",
+      "number": "4",
+      "text": "Лет на сцене в качестве скрипача"
+    }
+  ]
+}

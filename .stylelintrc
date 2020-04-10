@@ -7,6 +7,7 @@
     "color-hex-case": "lower",
     "selector-type-case": "lower",
     "no-duplicate-selectors": true,
+    "parser": "babel-eslint",
     "declaration-block-no-shorthand-property-overrides": true
   }
 }

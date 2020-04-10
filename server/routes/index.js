@@ -1,20 +1,27 @@
 const Router = require('koa-router');
+const koaBody = require('koa-body');
 const router = new Router();
 
-// const login = require('../controllers/login');
-// const mainPage = require('../controllers/main');
-// const contactMe = require('../controllers/contact');
-// const work = require('../controllers/work');
 const mainController = require('../controller/main.controller');
-// router.post('/login', login.login);
-// router.get('/login', login.loginPage);
+const adminController = require('../controller/admin.controller');
+const loginController = require('../controller/login.controller');
 
 router.get('/', mainController.getIndex);
 
-// router.get('/contact-me', contactMe.contactPage);
-// router.post('/contact-me', contactMe.sendEmail);
+router.get('/admin', adminController.getAdmin);
+router.post('/admin/skills', adminController.skillsData);
+router.post(
+  '/admin/upload',
+  koaBody({
+    multipart: true,
+    formidable: {
+      uploadDir: process.cwd() + '/public/upload',
+    },
+  }),
+  adminController.uploadData,
+);
 
-// router.get('/my-work',work.workPage);
-// router.post('/my-work',work.workSend);
+router.get('/login', loginController.getLogin);
+router.post('/login', loginController.loginUser);
 
 module.exports = router;

@@ -1,7 +1,5 @@
 extends ../_template
 
-block variables
-  - var title = 'Login page'
 
 block content
   header.header
@@ -17,7 +15,7 @@ block content
                   i(class=`fab ${item}`)
 
       form(action="/login" method="POST").form-login
-        if (msgslogin)
+        if (msglogin)
           .status= msglogin
         .form-login__line
           label.form-login__label(for="") Привет,

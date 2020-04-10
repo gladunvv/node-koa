@@ -4,7 +4,7 @@
   "author": "krabaton",
   "license": "ISC",
   "scripts": {
-    "server": "nodemon server/app.js",
+    "server": "nodemon server/app.js --ignore db.json",
     "start": "set NODE_ENV=development&& gulp",
     "build": "set NODE_ENV=production&& gulp build"
   },
@@ -44,10 +44,13 @@
     "config": "^3.3.1",
     "jquery": "^3.3.1",
     "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
+    "koa-bodyparser": "^4.3.0",
     "koa-pug": "^4.0.3",
     "koa-router": "^8.0.8",
     "koa-session": "^5.13.1",
     "koa-static": "^5.0.0",
+    "lowdb": "^1.0.0",
     "node-sass": "^4.13.1",
     "normalize.css": "^7.0.0",
     "pug": "^2.0.4"
