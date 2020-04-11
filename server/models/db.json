@@ -1,7 +1,5 @@
 {
-  "products": [
-
-  ],
+  "products": [],
   "user": {
     "login": "admin@gmail.com",
     "password": "pass12",

@@ -48,7 +48,7 @@ module.exports.uploadData = async (ctx, next) => {
 
   if (responseError) {
     await unlink(path);
-    return ctx.body = responseError;
+    return (ctx.body = responseError);
   }
 
   let fileName = _path.join(process.cwd(), 'public', 'upload', name);

@@ -7,6 +7,7 @@ const adminController = require('../controller/admin.controller');
 const loginController = require('../controller/login.controller');
 
 router.get('/', mainController.getIndex);
+router.post('/', mainController.sendMail)
 
 router.get('/admin', adminController.getAdmin);
 router.post('/admin/skills', adminController.skillsData);
